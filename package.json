@@ -1,0 +1,33 @@
+{
+  "name": "@woverlin/shared-ui",
+  "version": "1.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Woverlin/shared-ui.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/shared-ui.umd.cjs",
+  "module": "dist/shared-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/shared-ui.js",
+      "require": "./dist/shared-ui.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.2.0"
+  }
+}
